@@ -1,0 +1,93 @@
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+  }
+
+  body {
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #121212 !important;
+    color: #fff !important;
+    font-family: 'Centra', sans-serif !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+  }
+
+  nav.navbar2 {
+    padding: 0;
+    width: 100%;
+    margin-top: 60px;
+    z-index: 99;
+    transition:  0.32s ease-in-out; 
+  }
+  .navbar2 {
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+  }
+  .navbar2.scrolled {
+    padding: 0px 0;
+    background-color: #121212;
+  }
+  .navbar2 .nav-link{
+    font-weight: 400;
+    color: #fff !important;
+    letter-spacing: 0.1px;        
+    padding: 0 18px;             
+    font-size: 18px;
+    opacity: 0.75;
+  }
+  .navbar2 .nav-link:hover,
+  .navbar2 .nav-link.active {
+      opacity: 1;
+  }
+  span.navbar-text {
+      display: flex;
+      align-items: center;
+  }
+
+  nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+      transform: rotate(45deg);
+      background-color: #fff;
+      height: 2px;
+  }
+  nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+      transform: translateY(8px) rotate(-45deg);
+      background-color: #fff;
+      height: 2px;
+  }
+  nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+      border-color: transparent;
+  }
