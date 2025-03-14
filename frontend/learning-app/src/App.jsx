@@ -4,6 +4,8 @@ import Html from './pages/Html';
 import Css from './pages/Css';
 import { Navbar } from 'react-bootstrap';
 import NavBar from './components/Navbar';
+
+
 const App = () => {
    return (
       <>
