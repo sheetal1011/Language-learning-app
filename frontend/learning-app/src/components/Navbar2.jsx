@@ -32,11 +32,9 @@ export const Navbar2 = () => {
   return (
     <Navbar expand="lg" className={`navbar2 ${scrolled ? "scrolled": ""}`}>
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" >
-            <span className='navbar-toggler-icon'></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        
+        <Navbar.Collapse id="lang">
+          <Nav className="languages">
             <Nav.Link as="div" className={activeLink === 'html' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('html')}><Link to="/html" className="navbar-link">HTML</Link></Nav.Link>
             <Nav.Link as="div" className={activeLink === 'css' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('css')}><Link to="/css" className="navbar-link">CSS</Link></Nav.Link>
             <Nav.Link href="#javascript" className={activeLink === 'javascript' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('javascript')}>JAVASCRIPT</Nav.Link>
@@ -54,6 +52,7 @@ export const Navbar2 = () => {
             <Nav.Link href="#dsa" className={activeLink === 'dsa' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('dsa')}>DSA</Nav.Link>
          </Nav>
         </Navbar.Collapse>
+        
       </Container>
     </Navbar>
   );

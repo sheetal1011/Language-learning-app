@@ -11,8 +11,9 @@ function Home() {
     <>
       <div className="home">
         <NavBar />
-        <Banner />
         <Navbar2/>
+        <Banner />
+         
       </div>
     </>
   )

@@ -16,7 +16,7 @@ export const Banner = () => {
                         <p>Boost your fluency with interactive lessons, real-world conversations, and AI-powered feedback. Choose from multiple languages and start your journey today!</p>
                         <button onClick={() => console.log('connect')}>Get Started <ArrowRightCircle size={25}/></button>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    <Col xs={13} md={6} xl={5}>
                     <img src={headerImg} alt="Header Img" />
                     </Col>
                 </Row>

@@ -1,6 +1,6 @@
-  .html {
+.css {
   font-family: Arial, sans-serif;
-  background-image:url('../assets/bg-image.jpg') ;
+  background-image: url('../assets/bg-image.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -12,8 +12,8 @@
   overflow-y: auto;
   flex-direction: column;
 }
-
-.html .navbar-title {
+  
+.css .navbar-title {
   display: flex;
   align-items: center;
   justify-content: center; 
@@ -22,12 +22,12 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
   transition: transform 0.3s ease-in-out;
 }
-  
-.html .navbar-title:hover{
+ 
+.css .navbar-title:hover{
   transform: scale(1.05);
 }
 
-.html h1 {
+.css h1 {
   font-family: 'Poppins', sans-serif; 
   font-size: 24px;
   font-weight: bold;
@@ -36,8 +36,8 @@
   letter-spacing: 2px; 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-  
-.html .navbar{
+
+.css .navbar{
   width: 220px;
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.7);
@@ -50,7 +50,7 @@
   position: fixed;
 }
 
-.html .navbar ul {
+.css .navbar ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -58,14 +58,14 @@
   flex-grow: 1;
 }
 
-.html .navbar ul li {
+.css .navbar ul li {
   display: block;
   margin: 0 15px;
   text-align: left;
   width: 100%;
 }
 
-.html .navbar a {
+.css .navbar a {
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
@@ -75,62 +75,7 @@
   transition: 0.3s;
 }
 
-.html .navbar a:hover {
+.css .navbar a:hover {
   color: #92afd5;
   padding-left: 25px;
 }
-
-.html main{
-  margin-left: 240px;
-  padding: 20px;
-  min-height: 100vh;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  
-}
- 
-.html .container {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #101011;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-.html pre {
-  background-color: rgba(0,0,0,0.6);
-  padding: 15px;
-  border-radius: 5px;
-  font-family: monospace;
-  white-space: pre-wrap;
-  color: #bdcee0;
-  overflow-x: auto;
-  box-shadow: inset 0 0 10px rgba(196, 176, 176, 0.1);
-}
-
-.html p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.html footer {
-  text-align: center;
-  padding: 15px;
-  color: #fff;
-  margin-top: 100px;
-}
-
-@media (max-width: 768px) {
-  .container {
-      width: 90%;
-      padding: 15px;
-  }
-} 
-
-
-
-
-
-  

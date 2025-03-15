@@ -1,28 +1,7 @@
-@font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Bold.ttf');
-	font-weight: 700;
-}
-@font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Medium.ttf');
-	font-weight: 500;
-}
-@font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Book.ttf');
-	font-weight: 400;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 75px;
   }
 
   body {
@@ -32,12 +11,6 @@
     background-color: #121212 !important;
     color: #fff !important;
     font-family: 'Centra', sans-serif !important;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-    line-height: normal;
   }
 
   nav.navbar2 {
@@ -63,7 +36,7 @@
   }
   .navbar2 .nav-link{
     font-weight: 400;
-    color: #fff !important;
+    color: #fff;
     letter-spacing: 0.1px;        
     padding: 0 18px;             
     font-size: 18px;
@@ -73,21 +46,10 @@
   .navbar2 .nav-link.active {
       opacity: 1;
   }
-  span.navbar-text {
-      display: flex;
-      align-items: center;
+  
+  .navbar2 .languages .nav-link{
+     font-size: 20px;
+     margin-top: 10px;
   }
 
-  nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-      transform: rotate(45deg);
-      background-color: #fff;
-      height: 2px;
-  }
-  nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-      transform: translateY(8px) rotate(-45deg);
-      background-color: #fff;
-      height: 2px;
-  }
-  nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-      border-color: transparent;
-  }
+ 

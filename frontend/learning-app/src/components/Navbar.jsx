@@ -7,6 +7,8 @@ import navIcon2 from '../assets/nav-icon2.svg';
 import navIcon3 from '../assets/nav-icon3.svg';
 import logo from '../assets/logo.svg';
 import './NavBar.css';
+import { Link } from 'react-router-dom';
+import Login from '../pages/Login';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -32,24 +34,25 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
+
         <Navbar.Brand href="#home">
             <img src={logo} alt="Logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" >
-            <span className='navbar-toggler-icon'></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
+        
+        <Navbar.Collapse id="basic-navbar">
           
-          <span className='navbar-text'>
             <div className='social-icon'>
                 <a href="#"><img src={navIcon1} alt="" /></a>
                 <a href="#"><img src={navIcon2} alt="" /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
             </div>
-            <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
-          </span>
+          
         </Navbar.Collapse>
+
+        <button className='login' onClick={() => navigate("/login")}>
+        <Link to="/login" className="navbar-link"><span>Login</span></Link></button>
       </Container>
+
     </Navbar>
   );
 }
