@@ -6,6 +6,8 @@ import Navbar2 from './components/Navbar2.jsx';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Quizzes from './pages/Quizzes.jsx';
+import Quiz from './pages/Quiz.jsx';
 import Html from './pages/Html';
 import Css from './pages/Css';
 import Javascript from './pages/Javascript';
@@ -24,6 +26,8 @@ const App = () => {
       <Navbar2/>
          <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/quizzes" element={<Quizzes />} />
+            <Route path="/quiz/:language" element={<Quiz />} />
             <Route path="/html" element={<Html />} />
             <Route path="/css" element={<Css />} />
             <Route path='/javascript' element={<Javascript/>} />

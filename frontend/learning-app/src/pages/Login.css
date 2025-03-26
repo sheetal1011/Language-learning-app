@@ -11,7 +11,7 @@
     text-align: centre;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.3);
     box-shadow: 0 4px 6px rgba(0,0,0,0.9);
     width: 550px;
     height: 450px;
@@ -23,7 +23,7 @@
     margin-top: 35px;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #5b5151;
     margin-bottom: 16px;
     font-weight: bold; 
 }
@@ -40,7 +40,7 @@
     padding: 14px;
     border: none;
     border-radius: 5px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.9);
     color: black;
     font-size: 16px;
     font-weight: bold;
@@ -54,7 +54,7 @@
     text-align: left;
     position: relative;
     margin-top: 40px;
-    color: rgb(247, 249, 252);
+    color: rgb(65, 39, 56);
     font-size: small;
 }
 
@@ -64,7 +64,7 @@
     border: none;
     font-weight: bold;
     border-radius: 5px;
-    background: rgba(245, 245, 245, 0.644);
+    background: rgba(255, 255, 255, 1.1);
     color: black;
     font-size: 16px;
     cursor: pointer;
@@ -73,7 +73,7 @@
 
 .login button:hover{
     background: rgb(24, 23, 23);
-    color: beige;
+    color: rgb(244, 244, 238);
 }
 
 .login .signup-option {
@@ -81,7 +81,7 @@
     margin-top: 35px;
     justify-content: center;
     text-align: center;
-    color: azure;
+    color: rgb(73, 36, 53);
     margin-bottom: 16px;
     font-size: 15px;
 }
