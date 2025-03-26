@@ -3,8 +3,7 @@ import "../pages/Html.css";
 
 function Html() {
   return (
-    <div className="html">
-      
+    <div className="html"> 
       <nav className="navbar">
       <div className="navbar-title">
         <h1 >HTML Learning</h1>
@@ -23,6 +22,7 @@ function Html() {
           <li><a href="#examples">HTML Examples</a></li>
         </ul>
       </nav>
+
 
       <main>
       <section id="intro">

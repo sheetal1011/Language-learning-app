@@ -1,60 +1,66 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { useState, useEffect } from 'react';
-import navIcon1 from '../assets/nav-icon1.svg';
-import navIcon2 from '../assets/nav-icon2.svg';
-import navIcon3 from '../assets/nav-icon3.svg';
-import logo from '../assets/logo.svg';
-import './NavBar.css';
-import { Link } from 'react-router-dom';
-import Login from '../pages/Login';
-
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import { useState, useEffect } from "react";
+import logo from "../assets/logo.png";
+import "./NavBar.css";
+import { Link } from "react-router-dom";
+import { MoonFill, Search } from "react-bootstrap-icons";
 export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('home');
-    const [scrolled, seScrolled] = useState(false);
-    
-    useEffect(() => {
-        const onScroll = () => {
-            if (window.scrollY > 50){
-                seScrolled(true);
-            } else {
-                seScrolled(false);
-            }
-        }
+  const [activeLink, setActiveLink] = useState("home");
+  const [scrolled, seScrolled] = useState(false);
 
-        window.addEventListener("scroll", onScroll);
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        seScrolled(true);
+      } else {
+        seScrolled(false);
+      }
+    };
 
-        return() => window.removeEventListener("scroll",onScroll);
-    }, [])
+    window.addEventListener("scroll", onScroll);
 
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    }
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+  };
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
+    <Navbar expand="lg" className="navbar1">
       <Container>
+      <Navbar.Brand as={Link} to="/">
+        <img src={logo} alt="Logo" />
+      </Navbar.Brand>
 
-        <Navbar.Brand href="#home">
-            <img src={logo} alt="Logo" />
-        </Navbar.Brand>
-        
         <Navbar.Collapse id="basic-navbar">
-          
-            <div className='social-icon'>
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
-            </div>
-          
+          <div className="search">
+            <input type="text" placeholder="Search" />
+            <span className="icon">
+              <Search size={18} />
+            </span>
+          </div>
+          <div className="right-items">
+            <span className="moon">
+              <MoonFill size={25} />
+            </span>
+            <span className="nav-buttons">
+              <button className="login-button">
+                <Link to="/login" className="navbar-link">
+                  <span>Login</span>
+                </Link>
+              </button>
+              <button className="sign-button">
+                <Link to="/signup" className="navbar-link">
+                  <span>Sign Up</span>
+                </Link>
+              </button>
+            </span>
+          </div>
         </Navbar.Collapse>
-
-        <button className='login' onClick={() => navigate("/login")}>
-        <Link to="/login" className="navbar-link"><span>Login</span></Link></button>
       </Container>
-
     </Navbar>
   );
-}
+};
 
 export default NavBar;

@@ -1,28 +1,46 @@
 import { useState, useEffect } from "react";
 import Container from "react-bootstrap/esm/Container";
-import {Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/header-img.svg";
+import slide1 from '../assets/new1.jpg'
+import slide2 from '../assets/bg2.jpg';
+import slide3 from '../assets/bg.jpg';
+import { Button, Carousel, CarouselCaption, CarouselItem } from "react-bootstrap";
+import '../components/Banner.css';
 
 export const Banner = () => {
+  return (
+    <Carousel>
+        <CarouselItem>
+            <img src={slide3} alt="first slide"/>
+            <CarouselCaption>
+                <h4>🖥️ Learn to Code from Scratch</h4>
+                <h5>Start Your Coding Journey Today!</h5>
+                <p>Learn programming from the ground up with interactive lessons in HTML, CSS, JavaScript, Python, and more. No prior experience needed—just your curiosity! Get step-by-step guidance, quizzes, and real-world examples to master coding.</p>
+                <Button>get started</Button>
+            </CarouselCaption>
+            
+        </CarouselItem>
+        <CarouselItem>
+            <img src={slide3} alt="second slide"/>
+            <CarouselCaption>
+                <h4>🚀 Build Real-World Projects</h4>
+                <h5>Turn Your Skills into Real Applications</h5>
+                <p>Apply what you learn by building real-world projects. Work on exciting hands-on exercises, create dynamic websites and applications, and enhance your coding portfolio. Our platform helps you develop job-ready skills with guided challenges.</p>
+                <Button>get started</Button>
+            </CarouselCaption>
+        </CarouselItem>
+        <CarouselItem>
+            <img src={slide3} alt="third slide"/>
+            <CarouselCaption>
+                <h4>🎯 Learn Anytime, Anywhere</h4>
+                <h5>Flexible Learning for Every Developer</h5>
+                <p>Whether you’re at home, on the go, or at a café—learn at your own pace. Access engaging tutorials, live coding exercises, and expert guidance from any device. Our courses are designed to fit into your busy schedule.</p>
+                <Button>get started</Button>
+            </CarouselCaption>
+        </CarouselItem>
+    </Carousel>
 
-    return(
-        <section className="banner" id="home">
-            <Container>
-                <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to Language Learning.</span>
-                        <h1>{`Learn Languages the `}<span className="wrap">Fun Way!</span></h1>
-                        <p>Boost your fluency with interactive lessons, real-world conversations, and AI-powered feedback. Choose from multiple languages and start your journey today!</p>
-                        <button onClick={() => console.log('connect')}>Get Started <ArrowRightCircle size={25}/></button>
-                    </Col>
-                    <Col xs={13} md={6} xl={5}>
-                    <img src={headerImg} alt="Header Img" />
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-    )
-}
 
-export default Banner
+  );
+};
+
+export default Banner;
