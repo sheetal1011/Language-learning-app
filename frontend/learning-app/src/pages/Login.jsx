@@ -1,25 +1,32 @@
-import React from "react";
-import "../pages/Login.css";
-
+import React, { useState } from "react";
+import axios from "axios";
+import './Login.css';
 const Login = () => {
+  
+
   return (
     <div className="login">
-      <form>
+      <form >
         <h1>Login</h1>
         <div className="input-row">
-          <input type="text" placeholder="Username" required />
+          <input 
+            type="email" 
+            placeholder="Email" 
+            required 
+          />
         </div>
         <div className="input-row">
-          <input type="text" placeholder="Password" required />
+          <input 
+            type="password" 
+            placeholder="Password" 
+            required 
+          />
         </div>
-        <p className="forget">Forget Password?</p>
         <button type="submit">Login</button>
-        <div className="signup-option">
-          <p>OR Sign up</p>
-        </div>
       </form>
     </div>
   );
 };
 
 export default Login;
+

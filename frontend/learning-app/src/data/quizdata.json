@@ -1,0 +1,22 @@
+{
+    "javascript": [
+      {
+        "question": "What is JavaScript primarily used for?",
+        "options": ["Styling", "Data Storage", "Web Development", "Machine Learning"],
+        "answer": "Web Development"
+      },
+      {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "options": ["var", "let", "const", "All of the above"],
+        "answer": "All of the above"
+      }
+    ],
+    "python": [
+      {
+        "question": "What is the extension of Python files?",
+        "options": [".java", ".py", ".html", ".cpp"],
+        "answer": ".py"
+      }
+    ]
+  }
+  
