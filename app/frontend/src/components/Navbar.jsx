@@ -6,9 +6,11 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import { MoonFill, Search } from "react-bootstrap-icons";
 
+
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, seScrolled] = useState(false);
+ 
 
   useEffect(() => {
     const onScroll = () => {
@@ -27,6 +29,7 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
+
   return (
     <Navbar expand="lg" className="navbar1">
       <Container>
@@ -51,6 +54,7 @@ export const NavBar = () => {
             <span className="moon">
               <MoonFill size={25} />
             </span>
+            
             <span className="nav-buttons">
               <button className="login-button">
                 <Link to="/login" className="navbar-link">
@@ -63,6 +67,7 @@ export const NavBar = () => {
                 </Link>
               </button>
             </span>
+          
           </div>
         </Navbar.Collapse>
       </Container>
