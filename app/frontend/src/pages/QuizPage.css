@@ -1,0 +1,194 @@
+/* Quiz Container */
+.quiz-page, .result-page {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    height: 100vh;
+    min-width: 100vw;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .result-page{
+    background-color: #1e1e2f;
+    margin-top: 110px;
+    padding-top: 80px; /* navbar height se zyada thoda */
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+  .result{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #2b2b40;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    color: #f2f2f2;
+    margin-bottom: 40px;
+  }
+/* Full screen background area */
+.quiz-page {
+    background-color: #1e1e2f;
+    margin-top: 110px;
+    padding-top: 80px; /* navbar height se zyada thoda */
+    height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .quiz-page::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .quiz-page::-webkit-scrollbar-track {
+    background: #1e1e2f;
+  }
+  
+  .quiz-page::-webkit-scrollbar-thumb {
+    background-color: #00c3ff;
+    border-radius: 10px;
+    border: 2px solid #1e1e2f;
+  }
+  
+  .quiz-page::-webkit-scrollbar-thumb:hover {
+    background-color: #00a6d8;
+  }
+  
+  /* Centered scrollable card inside quiz-page */
+  .quiz-container {
+    height: calc(100vh-80px);
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #2b2b40;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    color: #f2f2f2;
+    margin-bottom: 40px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* Rest styles remain same */
+  .question-card {
+    background-color: #3a3a55;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    border-left: 6px solid #00c3ff;
+    transition: all 0.3s ease;
+  }
+  
+
+  /* Heading */
+  .quiz-page h2, .result-page h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00c3ff;
+  }
+  
+  /* Question card */
+  .question-card {
+    background-color: #2b2b40;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    border-left: 6px solid #00c3ff;
+    transition: all 0.3s ease;
+  }
+  
+  .question-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 195, 255, 0.3);
+  }
+  
+  .question-card p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  /* Options */
+  .question-card label {
+    display: block;
+    margin: 10px 0;
+    background-color: #3a3a55;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+  }
+  
+  .question-card label:hover {
+    background-color: #505070;
+  }
+  
+  input[type="radio"] {
+    margin-right: 12px;
+  }
+  
+  /* Nav Buttons */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  button {
+    background-color: #00c3ff;
+    color: #000000;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00a6d8;
+  }
+  
+  button:disabled {
+    background-color: #444;
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Result Page - Review Section */
+  .review-question {
+    background: #2f2f4f;
+    border-left: 6px solid #ffc107;
+    padding: 18px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+  }
+  
+  .review-question p {
+    margin: 6px 0;
+    font-size: 17px;
+    line-height: 1.4;
+  }
+  
+  /* Highlight Correct / Incorrect */
+  .correct {
+    color: #00ff8c;
+    font-weight: bold;
+  }
+  
+  .incorrect {
+    color: #ff5c5c;
+    font-weight: bold;
+  }
+  

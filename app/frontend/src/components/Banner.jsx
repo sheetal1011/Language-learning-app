@@ -22,7 +22,7 @@ export const Banner = () => {
             <CarouselCaption>
             <h2>Test Your Knowledge</h2>
             <p>Take quizzes and improve your coding skills.</p>
-            <Button variant="success"><Link to="/quizzes">
+            <Button variant="success"><Link to="/select-language">
             Take a Quiz
             </Link>
             </Button>

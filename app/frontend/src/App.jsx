@@ -7,6 +7,10 @@ import Home from './pages/Home.jsx';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Html from './pages/Html';
+import CoursesPage from './pages/CoursesPage.jsx';
+import CourseContent from './pages/CourseContent.jsx';
+import SelectLanguage from './pages/SelectLanguage.jsx';
+import QuizPage from './pages/QuizPage.jsx';
 
 
 const App = () => {
@@ -20,7 +24,10 @@ const App = () => {
             <Route path="/html" element={<Html />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            
+            <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/course/:id" element={<CourseContent />} />
+            <Route path="/select-language" element={<SelectLanguage />} />
+            <Route path="/quiz/:language" element={<QuizPage />} />
          </Routes>
          
       </>
