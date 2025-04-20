@@ -19,12 +19,12 @@
 }
 
 .course-card {
-  background: linear-gradient(135deg, #090b15, #021860);
+  background: linear-gradient(135deg, #090b15, #181f34);
   border-radius: 20px;
   padding: 2rem 1.5rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #e2e8f0;
+  border: 1px solid;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,7 +52,7 @@
 }
 
 .start-btn {
-  background: linear-gradient(135deg, #264b87, #2563eb); /* blue gradient */
+  background: linear-gradient(135deg, #7b8fb8, #2b3854); /* blue gradient */
   color: white;
   padding: 0.7rem 1.6rem;
   border: none;
@@ -68,7 +68,7 @@
 }
 
 .start-btn:hover {
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  background: linear-gradient(135deg, #2a2a2b, #81a1fa);
   transform: scale(1.05);
   box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
 }

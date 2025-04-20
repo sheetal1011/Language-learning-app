@@ -122,7 +122,7 @@ const QuizPage = () => {
         ))}
       </div>
   
-      <div className="nav-buttons">
+      <div className="quiz-nav-buttons">
         <button onClick={handlePrev} disabled={current === 0}>Previous</button>
         {current < questions.length - 1 ? (
           <button onClick={handleNext}>Next</button>
