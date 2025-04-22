@@ -23,20 +23,20 @@
     transform: scale(1.03);
 }
 .mycards button{
-  background: linear-gradient(135deg, #d551dc, #c54b5d);
+  background: linear-gradient(135deg, #7b8fb8, #2b3854);
   color: white;
   font-weight: bold;
   padding: 10px 15px;
   border: none;
   border-radius: 25px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.6);
+  box-shadow: 0px 4px 10px rgba(21, 5, 55, 0.6);
   text-transform: uppercase;
 }
 .mycards button:hover{
-  background: linear-gradient(135deg, #c04db3, #ff416c);
-  transform: scale(1.1);
-  box-shadow: 0px 6px 15px rgba(255, 75, 43, 0.7);
+    background: linear-gradient(135deg, #2a2a2b, #81a1fa);
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
 }
 .mycards button .button-class{
     text-decoration: none;

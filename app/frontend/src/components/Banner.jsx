@@ -8,35 +8,38 @@ export const Banner = () => {
   return (
     <Carousel>
         <CarouselItem>
-            <img src={slide3} alt="first slide"/>
+        <div className="gradient-slide">
             <CarouselCaption>
                 <h4>🖥️ Learn to Code from Scratch</h4>
                 <h5>Start Your Coding Journey Today!</h5>
                 <p>Learn programming from the ground up with interactive lessons in HTML, CSS, JavaScript, Python, and more. No prior experience needed—just your curiosity! Get step-by-step guidance, quizzes, and real-world examples to master coding.</p>
                 <Button>get started</Button>
             </CarouselCaption>
+        </div>
         </CarouselItem>
         
         <CarouselItem>
-            <img src={slide3} alt="second slide"/>
+        <div className="gradient-slide">
             <CarouselCaption>
             <h2>Test Your Knowledge</h2>
             <p>Take quizzes and improve your coding skills.</p>
-            <Button variant="success"><Link to="/select-language">
-            Take a Quiz
+            <Button><Link to="/select-language" className="add-quiz-button">
+            <span>Take a Quiz</span>
             </Link>
             </Button>
             </CarouselCaption>
+            </div>
         </CarouselItem>
 
         <CarouselItem>
-            <img src={slide3} alt="third slide"/>
+        <div className="gradient-slide">
             <CarouselCaption>
                 <h4>🎯 Learn Anytime, Anywhere</h4>
                 <h5>Flexible Learning for Every Developer</h5>
                 <p>Whether you’re at home, on the go, or at a café—learn at your own pace. Access engaging tutorials, live coding exercises, and expert guidance from any device. Our courses are designed to fit into your busy schedule.</p>
                 <Button>get started</Button>
             </CarouselCaption>
+        </div>
         </CarouselItem>
     </Carousel>
 

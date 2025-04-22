@@ -1,16 +1,28 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+import { Dropdown } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 import "./NavBar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { MoonFill, Search } from "react-bootstrap-icons";
-
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, seScrolled] = useState(false);
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    const userData = JSON.parse(localStorage.getItem("user"));
+    setUser(userData);
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    setUser(null);
+    navigate("/");
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -33,11 +45,12 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className="navbar1">
       <Container>
-      <Navbar.Brand as={Link} to="/">
-        <img src={logo} alt="Logo" />
-      </Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+          <img src={logo} alt="Logo" />
+        </Navbar.Brand>
 
         <Navbar.Collapse id="basic-navbar">
+          
           <div className="search">
             <input type="text" placeholder="Search" />
             <span className="icon">
@@ -45,25 +58,40 @@ export const NavBar = () => {
             </span>
           </div>
 
-          {/* Courses Button (Next to Search Bar) */}
           <Link to="/courses" className="courses-link">
             <button className="courses-button">Courses</button>
           </Link>
-          
+          <Link to="/select-language" className="quiz-link">
+            <button className="quiz-button">Quiz</button>
+          </Link>
+
           <div className="right-items">
-            <span className="moon">
-              <MoonFill size={25} />
-            </span>
-          
-          {/* Display user information */}
-{/*         
-              <div className="profile-section">
-                <span className="username">Welcome, {user.name}</span>
-                <button className="logout-button" onClick={handleLogout}>
-                  Logout
-                </button>
-              </div>
-             */}
+          <div className="moon">
+            <MoonFill size={25} />
+          </div>
+            {user ? (
+              <Dropdown align="end" className="profile-section">
+                <Dropdown.Toggle variant="transparent" className="username" id="user-dropdown">
+                  <i className="bi bi-file-person-fill" style={{ marginRight: "6px" }}></i>
+                  {user.name}
+                </Dropdown.Toggle>
+              
+                <Dropdown.Menu>
+                  <Dropdown.Item href="/profile">Profile</Dropdown.Item>
+                  <Dropdown.Item
+                    className="logout-button"
+                    onClick={() => {
+                      localStorage.removeItem("user");
+                      localStorage.removeItem("token");
+                      window.location.href = "/";
+                    }}
+                  >
+                    Logout
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+              
+            ) : (
               <span className="nav-buttons">
                 <button className="login-button">
                   <Link to="/login" className="navbar-link">
@@ -76,7 +104,7 @@ export const NavBar = () => {
                   </Link>
                 </button>
               </span>
-         
+            )}
           </div>
         </Navbar.Collapse>
       </Container>

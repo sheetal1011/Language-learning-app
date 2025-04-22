@@ -35,7 +35,7 @@ const Login = () => {
       if (response.ok) {
         setSuccess('Login successful! Redirecting...');
         localStorage.setItem('token', data.token);
-        // redirect after a short delay
+        localStorage.setItem('user', JSON.stringify(data.user)); 
         setTimeout(() => {
           window.location.href = '/'; // or wherever you want to go
         }, 1500);

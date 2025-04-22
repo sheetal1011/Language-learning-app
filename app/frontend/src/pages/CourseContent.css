@@ -53,36 +53,117 @@
   /* Main content */
   .lesson-content {
     flex: 1;
-    padding: 50px;
+    padding: 20px;
     overflow-y: auto;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03);
-    color: #333;
+    color: #f6f2f2;
   }
   
-  .lesson-content h2 {
-    font-size: 32px;
-    color: #bfa5db;
-    margin-bottom: 10px;
-  }
-  
+  /* Wrapper container */
+.lesson-content .rendered-html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f5f2f2;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  line-height: 1.7;
+}
+
+/* Headings */
+.lesson-content .rendered-html h1,
+.lesson-content .rendered-html h2,
+.lesson-content .rendered-html h3 {
+  color: #bcd6f0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.lesson-content .rendered-html h1 {
+  font-size: 28px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.lesson-content .rendered-html h2 {
+  font-size: 24px;
+}
+
+.lesson-content .rendered-html h3 {
+  font-size: 20px;
+}
+
+/* Paragraphs */
+.lesson-content .rendered-html p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* Lists */
+.lesson-content .rendered-html ul,
+.lesson-content .rendered-html ol {
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.lesson-content .rendered-html li {
+  margin-bottom: 8px;
+}
+
+/* Code blocks */
+.lesson-content .rendered-html code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(255, 255, 255, 1.0);
+  padding: 4px 4px;
+  color: #0e0d0d;
+}
+
+.lesson-content .rendered-html pre {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-left: 4px solid #ccc;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+
+/* Links */
+.lesson-content .rendered-html a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.lesson-content a:hover {
+  text-decoration: underline;
+}
+
+/* Tables */
+.lesson-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.lesson-content table,
+.lesson-content th,
+.lesson-content td {
+  border: 1px solid #ddd;
+}
+
+.lesson-content th,
+.lesson-content td {
+  padding: 10px;
+  text-align: left;
+}
+
+.lesson-content .rendered-html th {
+  background-color: #827d7d;
+}
+
   .lesson-content .description {
     font-size: 16px;
     color: #f8f3f3;
     margin-bottom: 25px;
   }
-  
-  .lesson-content h3 {
-    font-size: 26px;
-    color: #bfa5db;
-    margin-bottom: 10px;
-    margin-top: 30px;
-  }
-  
-  .lesson-content p {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #f9f6f6;
-  }
+
   
   /* Scrollbars (nice touch) */
   .sidebar::-webkit-scrollbar,
