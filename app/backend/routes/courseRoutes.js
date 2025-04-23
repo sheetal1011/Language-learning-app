@@ -11,6 +11,20 @@ router.get('/', async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
+router.get('/search', async (req, res) => {
+  const query = req.query.q;
+
+  try {
+    const courses = await Course.find({
+      title: { $regex: query, $options: 'i' } // case-insensitive search
+    });
+
+    res.json(courses);
+  } catch (error) {
+    console.error('Search error:', error);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
 
 router.get('/:id', async (req, res) => {
     try {
@@ -23,5 +37,8 @@ router.get('/:id', async (req, res) => {
       res.status(500).json({ message: 'Error fetching course', error: err.message });
     }
   });
+ 
   
+
+
 export default router;

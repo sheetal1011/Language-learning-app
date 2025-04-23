@@ -12,7 +12,7 @@ import CoursesPage from './pages/CoursesPage.jsx';
 import CourseContent from './pages/CourseContent.jsx';
 import SelectLanguage from './pages/SelectLanguage.jsx';
 import QuizPage from './pages/QuizPage.jsx';
-
+import SearchResults from './components/SearchResults.jsx';
 
 const App = () => {
    return (
@@ -29,6 +29,7 @@ const App = () => {
             <Route path="/course/:id" element={<CourseContent />} />
             <Route path="/select-language" element={<SelectLanguage />} />
             <Route path="/quiz/:language" element={<QuizPage />} />
+            <Route path="/search" element={<SearchResults/>}/>
          </Routes>
          
       </>

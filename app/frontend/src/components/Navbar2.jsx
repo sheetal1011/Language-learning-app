@@ -41,7 +41,7 @@ export const Navbar2 = () => {
             <Nav.Link as="div"><Link to="/java" className="navbar-link">JAVA</Link></Nav.Link>
             <Nav.Link as="div"><Link to="/c" className="navbar-link">C</Link></Nav.Link>
             <Nav.Link as="div"><Link to="/cpp" className="navbar-link">C++</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/c#" className="navbar-link">C#</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/mongodb" className="navbar-link">MongoDB</Link></Nav.Link>
             <Nav.Link as="div"><Link to="/sql" className="navbar-link">SQL</Link></Nav.Link>
             <Nav.Link as="div"><Link to="/mysql" className="navbar-link">MYSQL</Link></Nav.Link>
             <Nav.Link as="div"><Link to="/reactjs" className="navbar-link">REACT.JS</Link></Nav.Link>

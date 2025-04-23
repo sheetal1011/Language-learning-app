@@ -12,6 +12,13 @@ export const NavBar = () => {
   const [scrolled, seScrolled] = useState(false);
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
+  const [query, setQuery] = useState('');
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && query.trim()) {
+      navigate(`/search?query=${encodeURIComponent(query)}`);
+    }
+  };
 
   useEffect(() => {
     const userData = JSON.parse(localStorage.getItem("user"));
@@ -52,7 +59,10 @@ export const NavBar = () => {
         <Navbar.Collapse id="basic-navbar">
           
           <div className="search">
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={handleKeyDown} />
             <span className="icon">
               <Search size={18} />
             </span>
