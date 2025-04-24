@@ -30,6 +30,9 @@ const CourseContent = () => {
 
   const selectedLesson = course.lessons[selectedLessonIndex];
 
+  const { courseTitle } = useParams();
+
+
   return (
     <div className="course-container">
       <aside className="sidebar">

@@ -6,6 +6,7 @@ import MyCards from '../components/MyCards';
 import Footer from '../components/Footer';
 // import CodeEditor from '../components/CodeEditor';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DebugGameCard from '../components/DebugGameCard'; // adjust path if needed
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <Navbar2/>
         <Banner />
         <MyCards/>
+        <DebugGameCard />
         {/* <CodeEditor/> */}
         <Footer/>
       </div>

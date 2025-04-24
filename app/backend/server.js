@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser';
 import authRoutes from './routes/auth.js';
 import courseRoutes from './routes/courseRoutes.js';
 import quizRoutes from './routes/quizRoutes.js';
+import debugGameRoutes from './routes/debugGameRoutes.js';
 
 dotenv.config();
 const app = express();
@@ -16,6 +17,7 @@ app.use(cookieParser());
 app.use('/api/auth',authRoutes);
 app.use('/api/courses',courseRoutes);
 app.use('/api/quizzes',quizRoutes);
+app.use('/api/debug-game', debugGameRoutes);
 
 const MONGO_URI=process.env.MONGO_URI;
 mongoose.connect(MONGO_URI)

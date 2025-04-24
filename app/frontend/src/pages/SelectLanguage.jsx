@@ -13,8 +13,8 @@ const languages = [
   { name: 'SQL', tagline: 'Query your data' },
   { name: 'MYSQL', tagline: 'Popular RDBMS' },
   { name: 'MONGODB', tagline: 'The NoSQL Powerhouse' },
-  { name: 'REACT.JS', tagline: 'Modern UI framework' },
-  { name: 'NODE.JS', tagline: 'JS on the server' },
+  { name: 'REACTJS', tagline: 'Modern UI framework' },
+  { name: 'NODEJS', tagline: 'JS on the server' },
   { name: 'DJANGO', tagline: 'Python web magic' },
   { name: 'DSA', tagline: 'Crack coding rounds' }
 ];

@@ -33,21 +33,21 @@ export const Navbar2 = () => {
         
         <Navbar.Collapse id="lang">
           <Nav className="languages">
-            <Nav.Link as="div"><Link to="/html" className="navbar-link">HTML</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/css" className="navbar-link">CSS</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/javascript" className="navbar-link">JAVASCRIPT</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/php" className="navbar-link">PHP</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/python" className="navbar-link">PYTHON</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/java" className="navbar-link">JAVA</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/c" className="navbar-link">C</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/cpp" className="navbar-link">C++</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/mongodb" className="navbar-link">MongoDB</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/sql" className="navbar-link">SQL</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/mysql" className="navbar-link">MYSQL</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/reactjs" className="navbar-link">REACT.JS</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/nodejs" className="navbar-link">NODE.JS</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/django" className="navbar-link">DJANGO</Link></Nav.Link>
-            <Nav.Link as="div"><Link to="/dsa" className="navbar-link">DSA</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807ac5f8bf06dfdfcd95445" className="navbar-link">HTML</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807bce08bf06dfdfcd95447" className="navbar-link">CSS</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807bd3c8bf06dfdfcd95448" className="navbar-link">JAVASCRIPT</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807bdea8bf06dfdfcd95449" className="navbar-link">PHP</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807be888bf06dfdfcd9544a" className="navbar-link">JAVA</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807beef8bf06dfdfcd9544b" className="navbar-link">PYTHON</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807c8c88bf06dfdfcd9544d" className="navbar-link">C</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807c8e88bf06dfdfcd9544e" className="navbar-link">C++</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807c9078bf06dfdfcd9544f" className="navbar-link">MongoDB</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807cca08bf06dfdfcd95450" className="navbar-link">SQL</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/6807ccbf8bf06dfdfcd95451" className="navbar-link">MYSQL</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/68090af58bf06dfdfcd95461" className="navbar-link">REACT.JS</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/" className="navbar-link">NODE.JS</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/" className="navbar-link">DJANGO</Link></Nav.Link>
+            <Nav.Link as="div"><Link to="/course/" className="navbar-link">DSA</Link></Nav.Link>
          </Nav>
         </Navbar.Collapse>
         

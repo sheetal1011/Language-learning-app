@@ -37,8 +37,6 @@ router.get('/:id', async (req, res) => {
       res.status(500).json({ message: 'Error fetching course', error: err.message });
     }
   });
- 
-  
 
 
 export default router;
