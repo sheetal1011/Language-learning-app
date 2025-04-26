@@ -12,7 +12,7 @@ function SearchResults() {
 
   useEffect(() => {
     if (query) {
-        axios.get(`/api/courses/search?q=${query}`)
+        axios.get(`http://localhost:5000/api/courses/search?q=${query}`)
           .then((res) => {
             const fetchedData = res.data;
             console.log('Fetched Data:', fetchedData);

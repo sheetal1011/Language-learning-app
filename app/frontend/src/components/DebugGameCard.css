@@ -1,57 +1,60 @@
-/* DebugGameCard.css */
-
 .debug-card {
-    background: linear-gradient(135deg, #fdfbfb, #ebedee);
-    border-radius: 1.5rem;
-    padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .debug-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-  }
-  
-  .debug-card .card-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  .debug-card .card-text {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-  }
-  
-  .debug-card .Form-select {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ced4da;
-    transition: border-color 0.3s ease;
-  }
-  
-  .debug-card .form-select:focus {
-    border-color: #17a2b8;
-    box-shadow: 0 0 0 0.1rem rgba(23, 162, 184, 0.25);
-  }
-  
-  .debug-card .btn {
-    background-color: #17a2b8;
-    border: none;
-    font-weight: bold;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.75rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .debug-card .btn:hover {
-    background-color: #138496;
-  }
-  
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #07161d, #374f90);
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.debug-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.debug-card .card-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f1f2f5;
+  margin-bottom: 12px;
+}
+
+.debug-card .card-text {
+  font-size: 16px;
+  color: #e4eaf0;
+  margin-bottom: 20px;
+}
+
+.debug-card select {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.debug-card select:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+}
+
+.debug-card button {
+  background: linear-gradient(135deg, #7b8fb8, #2b3854);
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(21, 5, 55, 0.6);
+  text-transform: uppercase;
+}
+
+.debug-card button:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.03);
+}

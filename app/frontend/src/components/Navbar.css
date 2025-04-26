@@ -16,7 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  background: linear-gradient(135deg, #0f172a, #374f90);
 }
 
 nav.navbar1 {
@@ -30,7 +30,7 @@ nav.navbar1 {
   transition: 0.32s ease-in-out;
   align-items: center;
   justify-content: space-between;
-  background: rgba(37, 58, 96, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-brand img {
@@ -139,6 +139,9 @@ nav.navbar1 {
   align-items: center;
   gap: 10px;
   text-transform: capitalize;
+  
+    z-index: 10000;
+  
 }
 
 .profile-section .username:hover {

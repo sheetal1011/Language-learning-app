@@ -30,7 +30,7 @@ const handleStart = (id) => {
 
   return (
     <div className="course-list">
-      <h2>Available Courses</h2>
+      <h2>💡Available Courses</h2>
       {loading ? (
         <p>Loading courses...</p>
       ) : courses.length === 0 ? (

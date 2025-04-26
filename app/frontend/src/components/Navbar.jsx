@@ -82,7 +82,7 @@ export const NavBar = () => {
             {user ? (
               <Dropdown align="end" className="profile-section">
                 <Dropdown.Toggle variant="transparent" className="username" id="user-dropdown">
-                  <i className="bi bi-file-person-fill" style={{ marginRight: "6px" }}></i>
+                  <i className="bi bi-person-circle" style={{ marginRight: "6px" }}></i>
                   {user.name}
                 </Dropdown.Toggle>
               

@@ -5,20 +5,23 @@
     text-align: center;
     height: 100vh;
     width: 100vw;
-}
-
-.login form {
+    background-image: url('../assets/blue-bg.webp');
+    background-size: cover;
+  }
+  
+  .login form {
     text-align: centre;
     padding: 20px;
+    margin-top: 80px;
     border-radius: 10px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(0,0,0,0.3);
     box-shadow: 0 4px 6px rgba(0,0,0,0.9);
     width: 550px;
     height: 450px;
     max-width: 90%;
-}
-
-.login form h1{
+  }
+  
+  .login form h1{
     display: flex;
     margin-top: 35px;
     justify-content: center;
@@ -26,15 +29,15 @@
     color: #fcf9f9;
     margin-bottom: 16px;
     font-weight: bold; 
-}
-
-.login .input-row{
+  }
+  
+  .login .input-row{
     display: flex;
     gap: 14px;
     justify-content: space-between;
     margin-bottom: 10px;
-}
-.login input{
+  }
+  .login input{
     flex: 1;
     width: 48%;
     padding: 14px;
@@ -44,22 +47,15 @@
     color: rgb(18, 17, 17);
     font-size: 16px;
     font-weight: bold;
-}
-
-.login input::placeholder{
+  }
+  
+  .login input::placeholder{
     color: rgb(10, 10, 10);
-}
-
-.login .forget{
-    text-align: left;
-    position: relative;
-    margin-top: 40px;
-    color: rgb(65, 39, 56);
-    font-size: small;
-}
-
-.login button{
+  }
+  
+  .login button{
     width: 100%;
+    margin-top: 60px;
     padding: 16px;
     border: none;
     font-weight: bold;
@@ -69,19 +65,16 @@
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-}
-
-.login button:hover{
+  }
+  
+  .login button:hover{
     background: rgb(24, 23, 23);
     color: rgb(244, 244, 238);
-}
-
-.login .signup-option {
-    display: flex;
-    margin-top: 35px;
-    justify-content: center;
-    text-align: center;
-    color: rgb(239, 227, 233);
-    margin-bottom: 16px;
-    font-size: 15px;
-}
+  }
+  .login .forget{
+    text-align: left;
+    position: relative;
+    color:white;
+    margin-top: 15px;
+  }
+  

@@ -1,87 +1,61 @@
 import React from "react";
-import { Container, Row, Col, Card , Button } from "react-bootstrap";
-import card1 from '../assets/html.png';
-import card2 from '../assets/css.png';
-import card3 from '../assets/javascript.png';
-import card4 from '../assets/java.jpg';
-import card5 from '../assets/python.webp';
-import card6 from '../assets/cpp.jpg';
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import '../components/MyCards.css';
+import "../components/MyCards.css";
 
-const MyCards = () => {
-  return (
-    <div className="mycards">
+import card1 from "../assets/html.png";
+import card2 from "../assets/css.png";
+import card3 from "../assets/javascript.png";
+import card4 from "../assets/java.jpg";
+
+const courses = [
+  {
+    img: card1,
+    title: "Master HTML basics",
+    text: "Build the foundation of web development with structured markup.",
+    link: "/course/6807a1fdf33aef563ce1d6ab"
+  },
+  {
+    img: card2,
+    title: "Style with CSS",
+    text: "Design beautiful, responsive websites with modern CSS techniques.",
+    link: "/course/6807ac94f33aef563ce1da41"
+  },
+  {
+    img: card3,
+    title: "Javascript essentials",
+    text: "Make your websites interactive with JavaScript programming. ....",
+    link: "/course/6807b1a1f33aef563ce1dc20"
+  },
+  {
+    img: card4,
+    title: "Java programming",
+    text: "Learn Java from basics to advanced concepts with real-world applications.",
+    link: "/course/6807bd5ef33aef563ce1df10"
+  }
+];
+
+const MyCards = () => (
+  <div className="mycards">
     <Container className="mt-4">
       <Row className="g-4">
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={card1}/>
-            <Card.Body>
-              <Card.Title>Master HTML basics</Card.Title>
-              <Card.Text>Build the foundation of web development with structured markup.</Card.Text>
-              <Button ><Link to="/html" className="button-class">Get Started</Link></Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={card2} />
-            <Card.Body>
-              <Card.Title>Style with CSS</Card.Title>
-              <Card.Text>Design beautiful, responsive websites with modern CSS techniques.</Card.Text>
-              <Button ><Link to="/css" className="button-class">Get Started</Link></Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={card3} />
-            <Card.Body>
-              <Card.Title>Javascript essentials</Card.Title>
-              <Card.Text>Make your websites interactive with JavaScript programming.</Card.Text>
-              <Button><Link to="/javascript" className="button-class">Get Started</Link></Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-
-      <Row className="g-4">
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={card4}/>
-            <Card.Body>
-              <Card.Title>Java programming</Card.Title>
-              <Card.Text>Learn Java from basics to advanced concepts with real-world applications.</Card.Text>
-              <Button><Link to="/java" className="button-class">Get Started</Link></Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={card5} />
-            <Card.Body>
-              <Card.Title>Python for everyone</Card.Title>
-              <Card.Text>Master Python programming for web, AI, and data science.</Card.Text>
-              <Button><Link to="/python" className="button-class">Get Started</Link></Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={card6} />
-            <Card.Body>
-              <Card.Title>C++ fundamentals</Card.Title>
-              <Card.Text>Develop high-performance applications with C++ programming.</Card.Text>
-              <Button><Link to="/cpp" className="button-class">Get Started</Link></Button>
-            </Card.Body>
-          </Card>
-        </Col>
+        {courses.map((course, idx) => (
+          <Col md={3} key={idx}>
+            <Card>
+              <Card.Img variant="top" src={course.img} className="card-img" />
+              <Card.Body>
+                <Card.Title>{course.title}</Card.Title>
+                <Card.Text>{course.text}</Card.Text>
+                <Button>
+                  <Link to={course.link} className="button-class">Get Started</Link>
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
       </Row>
     </Container>
-    </div>
-  );
-};
+  </div>
+);
 
 export default MyCards;
-

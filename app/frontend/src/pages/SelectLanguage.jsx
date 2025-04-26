@@ -28,7 +28,8 @@ const SelectLanguage = () => {
 
   return (
     <div className="select-language-container">
-      <h2>Select a Language</h2>
+      <h2>📚Boost your coding skills!</h2>
+      <h4>Select a programming language below and put your skills to the test with our interactive quiz!</h4>
       <div className="language-grid">
         {languages.map((lang) => (
           <div key={lang.name} className="language-card" onClick={() => handleSelect(lang.name)}>

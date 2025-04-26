@@ -73,7 +73,11 @@ const Login = () => {
             required 
           />
         </div>
+        <div className="forget">
+          <h6>Forgot password?</h6>
+        </div>
         <button type="submit">Login</button>
+        
       </form>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./CourseContent.css";
+import Footer from '../components/Footer';
 
 const CourseContent = () => {
   const { id } = useParams();
@@ -34,6 +35,7 @@ const CourseContent = () => {
 
 
   return (
+    <>
     <div className="course-container">
       <aside className="sidebar">
         <h3>Lessons</h3>
@@ -60,6 +62,8 @@ const CourseContent = () => {
         ></div>
       </main>
     </div>
+    <Footer/>
+    </>
   );
 };
 

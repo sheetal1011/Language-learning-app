@@ -9,9 +9,9 @@
     justify-content: space-between;
     padding: 4px 20px; 
     top: 0;
-    z-index: 9999;
+    z-index: 999;
     transition:  0.32s ease-in-out;
-    background: rgba(28, 27, 75, 0.8);
+    background: rgba(0,0,0,0.5);
     
   }
   

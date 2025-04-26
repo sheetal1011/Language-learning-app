@@ -1,33 +1,34 @@
 .course-list {
-  max-width: 1200px;
-  margin-left: 150px;
+  min-width: 80vw;
   padding: 3rem 1rem;
   text-align: center;
+  background-image: url('../assets/game-bg3.webp');
+  background-size: cover;
 }
 
 .course-list h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2.5rem;
-  color: #1e293b;
-  font-weight: 700;
+  margin-top: 80px;
+  font-size: 2.5 rem;
+  color: #e5e7eb;
+  font-weight: 500;
 }
 
 .courses-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4, 1fr); /* 5 cards per row */
   gap: 1.5rem;
+  padding: 0 2rem;
+margin-top: 30px;
 }
 
 .course-card {
-  background: linear-gradient(135deg, #090b15, #181f34);
-  border-radius: 20px;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background: linear-gradient(135deg, #629cb9, #0c1542);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
 .course-card:hover {
@@ -36,11 +37,10 @@
 }
 
 .course-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
-  color: #f5f4f4;
-  font-weight: 600;
-  align-self: center;
+  margin: 0;
+  color:#eef0f3;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .course-card p {
@@ -48,11 +48,11 @@
   color: #e4e4e8;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  min-height: 72px; /* Keeps height uniform */
+  min-height: 72px;
 }
 
 .start-btn {
-  background: linear-gradient(135deg, #7b8fb8, #2b3854); /* blue gradient */
+  background: linear-gradient(135deg, #3460be, #010b21); /* blue gradient */
   color: white;
   padding: 0.7rem 1.6rem;
   border: none;
@@ -60,7 +60,7 @@
   cursor: pointer;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 12px rgba(11, 20, 38, 0.3);
   transition: all 0.3s ease;
   display: inline-block;
   align-self: center;

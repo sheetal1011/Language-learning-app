@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Card, Button, ListGroup } from 'react-bootstrap';
 import axios from 'axios';
+import './DebugGame.css';
 
 const DebugGame = () => {
   const { gameLanguage } = useParams();
@@ -17,7 +18,7 @@ const DebugGame = () => {
     const fetchQuestions = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`/api/debug-game/${gameLanguage}`);
+        const response = await axios.get(`http://localhost:5000/api/debug-game/${gameLanguage}`);
         setQuestions(response.data);
         setLoading(false);
       } catch (err) {
@@ -41,10 +42,12 @@ const DebugGame = () => {
   if (!question) return <div>No questions available.</div>;
 
   return (
-    <div className="container mt-4">
-      <h2 className="fw-bold">🧠 Debug Game: {gameLanguage}</h2>
-      <Card className="p-3 my-4 shadow-sm">
-        <pre className="bg-light p-3 rounded">{question.code}</pre>
+    <div className="debug-game-page">
+    <div className="debug-game-wrapper">
+    <div id="game-language">
+      <h2 className='game-heading'>🧠 Debug Game: {gameLanguage.toUpperCase()}</h2>
+      <Card >
+        <pre>{question.code}</pre>
         <h5>{question.question}</h5>
         <ListGroup>
           {question.options.map((opt, index) => (
@@ -75,13 +78,13 @@ const DebugGame = () => {
             ) : (
               <p className="text-danger fw-bold">❌ Incorrect.</p>
             )}
-            <p><strong>Explanation:</strong> {question.explanation}</p>
+            <p className='explanation'><strong>Explanation:</strong> {question.explanation}</p>
           </div>
         )}
 
         {showResult && currentIndex < questions.length - 1 && (
           <Button
-            className="mt-3"
+            className="next-ques-button"
             onClick={() => {
               setCurrentIndex(currentIndex + 1);
               setSelected(null);
@@ -92,6 +95,8 @@ const DebugGame = () => {
           </Button>
         )}
       </Card>
+    </div>
+    </div>
     </div>
   );
 };

@@ -1,0 +1,131 @@
+.debug-game-page {
+  width: 100vw;
+  height: 125vh;
+  display: flex;
+  justify-content: center;
+  background-image: url('../assets/game-bg3.webp') !important;
+  background-size: cover;
+}
+
+.debug-game-wrapper #game-language {
+  height: calc(100vh-80px);
+  min-width: 800px;
+  margin: 121px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  color: #f2f2f2;
+  margin-bottom: 40px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.debug-game-wrapper .game-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: rgb(255, 254, 254);
+}
+.debug-game-wrapper #game-language .card {
+  background-color:rgba(136, 122, 122, 0.4);
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  border-left: 6px solid #375f6b;
+  transition: all 0.3s ease;
+}
+
+.debug-game-wrapper #game-language pre {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+
+.debug-game-wrapper #game-language .cursor-pointer {
+  cursor: pointer;
+}
+
+.debug-game-wrapper .explanation {
+  margin-top: 1rem;
+  background-color: #7198be;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Question title */
+.debug-game-wrapper  #game-language h5 {
+    margin-top: 24px;
+    font-weight: 600;
+    color: #7a94c9;
+    font-size: 20px;
+  }
+  
+  /* Options */
+.debug-game-wrapper  #game-language .list-group-item {
+    border: 0px solid #828384;
+    border-radius: 8px !important;
+    margin-top: 12px;
+    padding: 12px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+  }
+  
+  #game-language .list-group-item:hover {
+    background-color: #3e4548;
+    transform: scale(1.015);
+    cursor: pointer;
+  }
+  
+  /* Correct / Incorrect feedback */
+  #game-language .list-group-item.success {
+    background-color: #d1e7dd !important;
+    border-color: #badbcc;
+    color: #0f5132;
+    font-weight: 600;
+  }
+  
+  #game-language .list-group-item.danger {
+    background-color: #f8d7da !important;
+    border-color: #f5c2c7;
+    color: #ae0505;
+    font-weight: 600;
+  }
+  
+  /* Text feedback */
+  #game-language .text-success,
+  #game-language .text-danger {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  
+  #game-language .explanation{
+    background-color: rgba(0,0,0,0.5);
+  color: white;
+  }
+  /* Button */
+  #game-language .next-ques-button {
+    background: linear-gradient(135deg, #7b8fb8, #2b3854); /* blue gradient */
+  color: white;
+  padding: 0.7rem 1.6rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+  display: inline-block;
+  align-self: center;
+  letter-spacing: 0.5px;
+  }
+  
+  .game-language .next-ques-button:hover {
+    background-color: #2c78e9;
+  }
+  
