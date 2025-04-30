@@ -7,9 +7,8 @@ import "./NavBar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { MoonFill, Search } from "react-bootstrap-icons";
 
+
 export const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, seScrolled] = useState(false);
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
   const [query, setQuery] = useState('');
@@ -29,24 +28,6 @@ export const NavBar = () => {
     localStorage.removeItem("user");
     setUser(null);
     navigate("/");
-  };
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        seScrolled(true);
-      } else {
-        seScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
   };
 
   return (
@@ -88,19 +69,13 @@ export const NavBar = () => {
               
                 <Dropdown.Menu>
                   <Dropdown.Item href="/profile">Profile</Dropdown.Item>
-                  <Dropdown.Item
-                    className="logout-button"
-                    onClick={() => {
+                  <Dropdown.Item className="logout-button" onClick={() => {
                       localStorage.removeItem("user");
                       localStorage.removeItem("token");
                       window.location.href = "/";
-                    }}
-                  >
-                    Logout
-                  </Dropdown.Item>
+                    }}> Logout </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              
             ) : (
               <span className="nav-buttons">
                 <button className="login-button">

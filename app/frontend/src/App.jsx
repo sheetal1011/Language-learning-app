@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Router, BrowserRouter } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import NavBar from './components/Navbar.jsx';
@@ -17,12 +17,10 @@ import DebugGame from './pages/DebugGame.jsx';
 const App = () => {
    return (
       <>
-     
       <NavBar/>
       <Navbar2/>
          <Routes>
             <Route path="/" element={<Home />} />
-            
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/courses" element={<CoursesPage />} />
@@ -31,8 +29,6 @@ const App = () => {
             <Route path="/quiz/:language" element={<QuizPage />} />
             <Route path="/search" element={<SearchResults/>}/>
             <Route path="/debug-game/:gameLanguage" element={<DebugGame />} />
-
-
          </Routes>
          
       </>

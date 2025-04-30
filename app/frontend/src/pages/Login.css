@@ -5,8 +5,8 @@
     text-align: center;
     height: 100vh;
     width: 100vw;
-    background-image: url('../assets/blue-bg.webp');
-    background-size: cover;
+    background-color: var(--background-color);
+    
   }
   
   .login form {
@@ -14,7 +14,7 @@
     padding: 20px;
     margin-top: 80px;
     border-radius: 10px;
-    background: rgba(0,0,0,0.3);
+    background: var(--navy-color);
     box-shadow: 0 4px 6px rgba(0,0,0,0.9);
     width: 550px;
     height: 450px;
@@ -26,7 +26,7 @@
     margin-top: 35px;
     justify-content: center;
     text-align: center;
-    color: #fcf9f9;
+    color: beige;
     margin-bottom: 16px;
     font-weight: bold; 
   }
@@ -44,7 +44,7 @@
     border: none;
     border-radius: 5px;
     background: rgba(255,255,255,0.6);
-    color: rgb(18, 17, 17);
+    color: var(--text-color);
     font-size: 16px;
     font-weight: bold;
   }
@@ -61,7 +61,7 @@
     font-weight: bold;
     border-radius: 5px;
     background: rgba(255, 255, 255, 1.1);
-    color: rgb(16, 16, 16);
+    color: var(--text-color);
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;

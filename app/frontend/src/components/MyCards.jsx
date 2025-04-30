@@ -41,8 +41,8 @@ const MyCards = () => (
       <Row className="g-4">
         {courses.map((course, idx) => (
           <Col md={3} key={idx}>
-            <Card>
-              <Card.Img variant="top" src={course.img} className="card-img" />
+            <Card className="cards">
+              <img src={course.img} className="card-img" />
               <Card.Body>
                 <Card.Title>{course.title}</Card.Title>
                 <Card.Text>{course.text}</Card.Text>

@@ -3,8 +3,6 @@
   height: 125vh;
   display: flex;
   justify-content: center;
-  background-image: url('../assets/game-bg3.webp') !important;
-  background-size: cover;
 }
 
 .debug-game-wrapper #game-language {

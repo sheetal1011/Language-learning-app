@@ -11,7 +11,9 @@
 }
 
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.65); 
+    background-color: rgba(0, 0, 0, 0.35); 
+    backdrop-filter: blur(25px); 
+    -webkit-backdrop-filter: blur(10px); 
     border: 1px solid rgba(186, 55, 55, 0.1);
     padding: 15px;
     border-radius: 5px;
@@ -35,7 +37,7 @@
     margin-top: 30px;
   }
   .carousel-caption button{
-    background: linear-gradient(135deg, #7b8fb8, #2b3854); /* blue gradient */
+    background: #0e1a3b; /* blue gradient */
    color: white;
   padding: 0.7rem 1.6rem;
   border: none;
@@ -50,9 +52,9 @@
   margin-top: 80px;
   }
 
-  .carousel-caption .add-quiz-button span{
+  .carousel-caption .add-quiz-button{
     text-decoration: none;
-    color: white;
+    color: white !important; 
   }
   .carousel-caption button:hover{
     background: linear-gradient(135deg, #2a2a2b, #81a1fa);
